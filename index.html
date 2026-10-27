@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="/js/vacation.js"></script>
+    <title>Booking Page</title>
+</head>
+<body>
+    <div id="main-content">
+        <div id="header">
+            <div class="one-col"> 
+                <h1>Book Your Dream Vacation</h1>
+            </div>
+        </div>
+        <span id="err"></span>
+        <form action="/booking-create" method="get" id="main-form">
+            <div class="one-col">
+                <label for="destination">Destination</label>
+                <select name="destination" id="destination">
+                    <option selected>Choose a destination...</option>
+                    <option>Paris, France</option>
+                    <option>Rome, Italy</option>
+                    <option>Dubrovnik, Croatia</option>
+                    <option>New York City, USA</option>
+                    <option>Seattle, USA</option>
+                </select>
+            </div>
+            <div class="two-col">
+                <div> 
+                    <label for="selected-date">Departure Date</label>
+                    <input type="date" name="selected-date" id="selected-date">
+                </div>
+                <div>
+                    <label for="traveler-count">Number of Travelers</label>
+                    <input type="number" name="traveler-count" id="traveler-count" value="0">
+                </div>
+            </div>
+            <button type="submit" id="submit-button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
